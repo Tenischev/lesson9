@@ -7,13 +7,14 @@
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
         <service android:name=".MyIntentServ" />
         <activity android:name="MyActivity"
-                  android:label="@string/app_name">
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".CityList" android:label="Add chanel">
+        <activity android:name=".CityList" android:label="Add chanel" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.cityList"/>
                 <category android:name="android.intent.category.DEFAULT"/>
